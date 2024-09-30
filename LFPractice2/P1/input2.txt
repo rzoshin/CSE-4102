@@ -1,0 +1,13 @@
+int A = 2;
+while(A < 6)
+{
+print(A);
+A = A + 1;
+}
+
+int X = 2;
+while(X < 20)
+{
+X = X +3;
+print(X);
+}

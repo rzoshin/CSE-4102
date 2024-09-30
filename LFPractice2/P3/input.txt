@@ -1,0 +1,18 @@
+int E = 30;
+int X = 100;
+int D = 10-E+X;
+if(E > 0) 
+{
+    if(D>0)
+    {
+        print(D);
+    }
+    else
+    {
+        print(X);
+    }  
+}
+else 
+{ 
+    print(E); 
+}

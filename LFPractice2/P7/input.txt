@@ -1,0 +1,3 @@
+Suppose a as INT = 5--;
+Suppose b as INT = PRINT(IN() - a + 2);
+PRINT(b);

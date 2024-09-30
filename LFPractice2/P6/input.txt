@@ -1,0 +1,4 @@
+DEF INT a = 5;
+OUT(a);
+DEF INT b = 55;
+OUT(a+b);

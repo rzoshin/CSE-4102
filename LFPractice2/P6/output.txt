@@ -1,0 +1,146 @@
+In line no 1, Inserting a with type INT_TYPE in symbol table.
+In line no 3, Inserting b with type INT_TYPE in symbol table.
+In line no 4, Inserting temp with type INT_TYPE in symbol table.
+Parsing finished!
+============= INTERMEDIATE CODE===============
+  0: start              -1
+  1: ld_int              5
+  2: store               0
+  3: print_int_value     0
+  4: ld_int             55
+  5: store               1
+  6: ld_var              0
+  7: ld_var              1
+  8: add                -1
+  9: store               2
+ 10: print_int_value     2
+ 11: halt               -1
+============= ASM CODE===============
+
+;start -1
+.686
+.model flat, c
+include C:\masm32\include\msvcrt.inc
+includelib C:\masm32\lib\msvcrt.lib
+
+.stack 200h
+printf PROTO arg1:Ptr Byte, printlist:VARARG
+scanf PROTO arg2:Ptr Byte, inputlist:VARARG
+
+.data
+output_integer_msg_format byte "%d", 0Ah, 0
+output_string_msg_format byte "%s", 0Ah, 0
+input_integer_format byte "%d",0
+
+number sdword ?
+
+.code
+
+main proc
+	push ebp
+	mov ebp, esp
+	sub ebp, 200
+	mov ebx, ebp
+	add ebx, 4
+
+;ld_int 5
+	mov eax, 5
+	mov dword ptr [ebx], eax
+	add ebx, 4
+
+
+;store 0
+	mov eax, [ebx-4]
+	mov dword ptr [ebp-0], eax
+
+;print_int_value 0
+	push eax
+	push ebx
+	push ecx
+	push edx
+	push [ebp-8]
+	push [ebp-4]
+	push [ebp-0]
+	push [ebp+4]
+	push ebp
+	mov eax, [ebp-0]
+	INVOKE printf, ADDR output_integer_msg_format, eax
+	pop ebp
+	pop [ebp+4]
+	pop [ebp-0]
+	pop [ebp-4]
+	pop [ebp-8]
+	pop edx
+	pop ecx
+	pop ebx
+	pop eax
+
+;ld_int 55
+	mov eax, 55
+	mov dword ptr [ebx], eax
+	add ebx, 4
+
+
+;store 1
+	mov eax, [ebx-4]
+	mov dword ptr [ebp-4], eax
+
+;ld_var 0
+	mov eax, [ebp-0]
+	mov dword ptr [ebx], eax
+	add ebx, 4
+
+
+;ld_var 1
+	mov eax, [ebp-4]
+	mov dword ptr [ebx], eax
+	add ebx, 4
+
+
+;add -1
+	sub ebx, 4
+	mov eax, [ebx]
+	sub ebx, 4
+	mov edx, [ebx]
+	add eax, edx
+	mov dword ptr [ebx], eax
+	add ebx, 4
+
+
+;store 2
+	mov eax, [ebx-4]
+	mov dword ptr [ebp-8], eax
+
+;print_int_value 2
+	push eax
+	push ebx
+	push ecx
+	push edx
+	push [ebp-8]
+	push [ebp-4]
+	push [ebp-0]
+	push [ebp+4]
+	push [ebp+8]
+	push [ebp+12]
+	push ebp
+	mov eax, [ebp-8]
+	INVOKE printf, ADDR output_integer_msg_format, eax
+	pop ebp
+	pop [ebp+12]
+	pop [ebp+8]
+	pop [ebp+4]
+	pop [ebp-0]
+	pop [ebp-4]
+	pop [ebp-8]
+	pop edx
+	pop ecx
+	pop ebx
+	pop eax
+
+;halt -1
+	add ebp, 200
+	mov esp, ebp
+	pop ebp
+	ret
+main endp
+end main

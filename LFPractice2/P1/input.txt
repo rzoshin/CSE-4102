@@ -1,0 +1,6 @@
+int ab = 1;
+while(ab < 10)
+{
+ab = ab + 1;
+print(ab);
+}

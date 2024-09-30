@@ -43,7 +43,7 @@ Cond: ID ASSIGN ICONST TO ICONST{
 	int address = idcheck($1);
 	gen_code(LD_VAR, address);
 	gen_code(LD_INT, $5);
-	gen_code(LT_OP, gen_label());
+	gen_code(LTE_OP, gen_label());
 };
 Next_stat: NEXT ID{
 	int address = idcheck($2);

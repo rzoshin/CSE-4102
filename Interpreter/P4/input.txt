@@ -1,0 +1,14 @@
+int H = 50;
+int U = 60;
+
+while(H < 70){
+    if ( U > 0)
+    {
+        print(H);
+    }
+    else
+    {
+        print(U);
+    }
+    H = H + 2;
+}

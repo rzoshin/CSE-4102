@@ -1,0 +1,677 @@
+In line no 1, Inserting H with type INT_TYPE in symbol table.
+In line no 2, Inserting U with type INT_TYPE in symbol table.
+Parsing finished!
+============= INTERMEDIATE CODE===============
+  0: start              -1
+  1: ld_int             50
+  2: store               0
+  3: ld_int             60
+  4: store               1
+  5: ld_var              0
+  6: ld_int             70
+  7: lt                 -1
+  8: jmp_false          21
+  9: ld_var              1
+ 10: ld_int              0
+ 11: gt                 -1
+ 12: jmp_false          15
+ 13: print_int_value     0
+ 14: goto               16
+ 15: print_int_value     1
+ 16: ld_var              0
+ 17: ld_int              2
+ 18: add                -1
+ 19: store               0
+ 20: goto                5
+ 21: halt               -1
+============= RUN CODE IN VIRTUAL MACHINE ===============
+
+;start -1
+PC =   0 IR.arg =       -1 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 0 	stack[8] = 0 	stack[9] = 0 
+
+;ld_int 50
+PC =   1 IR.arg =       50 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 50 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 0 	stack[8] = 0 	stack[9] = 0 
+
+;store 0
+PC =   2 IR.arg =        0 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 50 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 0 	stack[9] = 0 
+
+;ld_int 60
+PC =   3 IR.arg =       60 AR =   7 Top_position =   0, Top_value =       50
+	stack[0] = 60 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 0 	stack[9] = 0 
+
+;store 1
+PC =   4 IR.arg =        1 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 60 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =   0, Top_value =       60
+	stack[0] = 50 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 50 	stack[1] = 70 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =   2, Top_value =        0
+	stack[0] = 1 	stack[1] = 70 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =   1, Top_value =       70
+	stack[0] = 1 	stack[1] = 70 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =   0, Top_value =        1
+	stack[0] = 60 	stack[1] = 70 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =   1, Top_value =       70
+	stack[0] = 60 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =   2, Top_value =        0
+	stack[0] = 1 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 1 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =   0, Top_value =        1
+50
+	stack[0] = 1 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 1 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 1 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =   0, Top_value =        1
+	stack[0] = 2 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 2 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 50 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =   0, Top_value =        2
+	stack[0] = 2 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -1, Top_value =       52
+	stack[0] = 2 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -1, Top_value =       52
+	stack[0] = 2 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =   0, Top_value =        2
+	stack[0] = 70 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 70 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =   0, Top_value =       70
+	stack[0] = 70 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -1, Top_value =        1
+	stack[0] = 70 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =   0, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =   1, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -1, Top_value =        1
+52
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -2, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -2, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -1, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 52 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -1, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -2, Top_value =       54
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -2, Top_value =       54
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -1, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -1, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -2, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -1, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =   0, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -2, Top_value =        1
+54
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -3, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -3, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -2, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 54 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -2, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -3, Top_value =       56
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -3, Top_value =       56
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -2, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -2, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -3, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -2, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -1, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -2, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -3, Top_value =        1
+56
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -4, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -4, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -3, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -2, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 56 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -3, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -4, Top_value =       58
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -4, Top_value =       58
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -3, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -2, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -3, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -4, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -3, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -2, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -3, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -4, Top_value =        1
+58
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -5, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -5, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -4, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -3, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 58 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -4, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -5, Top_value =       60
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -5, Top_value =       60
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -4, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -3, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -4, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -5, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -4, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -3, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -4, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -5, Top_value =        1
+60
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -6, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -6, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -5, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -4, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 60 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -5, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -6, Top_value =       62
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -6, Top_value =       62
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -5, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -4, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -5, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -6, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -5, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -4, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -5, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -6, Top_value =        1
+62
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -7, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -7, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -6, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -5, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 62 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -6, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -7, Top_value =       64
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -7, Top_value =       64
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -6, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -5, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -6, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -7, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -6, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -5, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -6, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -7, Top_value =        1
+64
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -8, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -8, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -7, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -6, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 64 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -7, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -8, Top_value =       66
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -8, Top_value =       66
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -7, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -6, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -7, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -8, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -7, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -6, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -7, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -8, Top_value =        1
+66
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position =  -9, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position =  -9, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -8, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -7, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 66 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -8, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position =  -9, Top_value =       68
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position =  -9, Top_value =       68
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -8, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -7, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -8, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 1
+PC =   9 IR.arg =        1 AR =   7 Top_position =  -9, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 0
+PC =  10 IR.arg =        0 AR =   7 Top_position =  -8, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;gt -1
+PC =  11 IR.arg =       -1 AR =   7 Top_position =  -7, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 15
+PC =  12 IR.arg =       15 AR =   7 Top_position =  -8, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;print_int_value 0
+PC =  13 IR.arg =        0 AR =   7 Top_position =  -9, Top_value =        1
+68
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;goto 16
+PC =  14 IR.arg =       16 AR =   7 Top_position = -10, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =  16 IR.arg =        0 AR =   7 Top_position = -10, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 2
+PC =  17 IR.arg =        2 AR =   7 Top_position =  -9, Top_value =        1
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;add -1
+PC =  18 IR.arg =       -1 AR =   7 Top_position =  -8, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 68 	stack[8] = 60 	stack[9] = 0 
+
+;store 0
+PC =  19 IR.arg =        0 AR =   7 Top_position =  -9, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 
+
+;goto 5
+PC =  20 IR.arg =        5 AR =   7 Top_position = -10, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 
+
+;ld_var 0
+PC =   5 IR.arg =        0 AR =   7 Top_position = -10, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 
+
+;ld_int 70
+PC =   6 IR.arg =       70 AR =   7 Top_position =  -9, Top_value =        2
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 
+
+;lt -1
+PC =   7 IR.arg =       -1 AR =   7 Top_position =  -8, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 
+
+;jmp_false 21
+PC =   8 IR.arg =       21 AR =   7 Top_position =  -9, Top_value =       70
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 
+
+;halt -1
+PC =  21 IR.arg =       -1 AR =   7 Top_position = -10, Top_value =        0
+	stack[0] = 0 	stack[1] = 0 	stack[2] = 0 	stack[3] = 0 	stack[4] = 0 	stack[5] = 0 	stack[6] = 0 	stack[7] = 70 	stack[8] = 60 	stack[9] = 0 

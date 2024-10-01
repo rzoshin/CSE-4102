@@ -1,0 +1,12 @@
+It's a proc named main with params()
+it starts from here
+It's an integer variable named a;
+It's an integer variable named b;
+assign 50 to variable a;
+assign 60 to variable b;
+perform add between a & b and store at b;
+check b>20 if true
+display "OK";
+if false
+display "Not OK";
+it ends here

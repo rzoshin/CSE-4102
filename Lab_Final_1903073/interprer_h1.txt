@@ -1,0 +1,53 @@
+int address = idcheck($);
+if(address != -1)
+{
+    gen_code();
+}
+
+
+gen_label()
+
+
+LD_INT, 
+LD_VAR, 
+STORE, 
+SCAN_INT_VALUE, 
+PRINT_INT_VALUE, 
+ADD,
+SUB,
+GT_OP,
+LT_OP,
+JMP_FALSE,
+GOTO,
+
+if_statement:   IF LPAREN exp RPAREN 
+                {
+                    global_label = (struct lbs *) newlblrec(); 
+                    global_label->for_jmp_false = reserve_loc();
+                }     
+                tail { global_label->for_goto = reserve_loc(); } 
+                ELSE 
+                {
+                    back_patch( global_label->for_jmp_false, JMP_FALSE, gen_label() ); 
+                }    
+                tail
+                { 
+                    back_patch( global_label->for_goto, GOTO, gen_label() ); 
+                }
+                ;
+
+while_statement: WHILE 
+                { 
+                    global_label = (struct lbs *) newlblrec();
+                    global_label->for_goto = gen_label(); 
+                }
+                LPAREN exp RPAREN 
+                { 
+                    global_label->for_jmp_false = reserve_loc(); 
+                }
+                tail 
+                { 
+                    gen_code( GOTO, global_label->for_goto );
+                    back_patch( global_label->for_jmp_false, JMP_FALSE, gen_label() ); 
+                }
+                ;

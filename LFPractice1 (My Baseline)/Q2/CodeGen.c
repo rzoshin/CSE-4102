@@ -169,9 +169,9 @@ void print_assembly()
                             break;
             case SUB:
                             printf("\tsub ebx, 4\n");
-                            printf("\tmov eax, [ebx]\n");
-                            printf("\tsub ebx, 4\n");
                             printf("\tmov edx, [ebx]\n");
+                            printf("\tsub ebx, 4\n");
+                            printf("\tmov eax, [ebx]\n");
                             printf("\tsub eax, edx\n");
                             printf("\tmov dword ptr [ebx], eax\n");
                             printf("\tadd ebx, 4\n");
@@ -179,9 +179,9 @@ void print_assembly()
                             break;
             case MUL:
                             printf("\tsub ebx, 4\n");
-                            printf("\tmov eax, [ebx]\n");
-                            printf("\tsub ebx, 4\n");
                             printf("\tmov edx, [ebx]\n");
+                            printf("\tsub ebx, 4\n");
+                            printf("\tmov eax, [ebx]\n");
                             printf("\tmul eax, edx\n");
                             printf("\tmov dword ptr [ebx], eax\n");
                             printf("\tadd ebx, 4\n");
